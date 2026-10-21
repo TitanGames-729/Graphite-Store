@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header nav {
+    background-color: #333;
+    color: #fff;
+    padding: 0 4vh; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul#main-nav {
+    gap: 3rem;
+}
+
+header nav ul#user-actions {
+    gap: 3vh;
+}
+
+section#hero-section {
+    background-color: #f4f5f7;
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem;
+}
+
+.hero-image {
+    max-height: 300px;
+}

@@ -5,6 +5,12 @@ body {
 
 }
 
+h2 {
+    font-size: 2rem;
+    margin-block-start: 0.5rem;
+    margin-block-end: 0.3rem;
+}
+
 header nav {
     background-color: #000000;
     color: #fff;
@@ -36,8 +42,7 @@ section#hero-section {
     background-color: #f4f5f7;
     display: flex;
     justify-content: space-between;
-    margin: 3rem;
-    padding: 2rem;
+    padding: 3rem;
 }
 
 .hero-image {
@@ -47,10 +52,8 @@ section#hero-section {
 .category-list {
     display: flex;
     justify-content: space-around;
-    gap: 1vh;
+    gap: 1.5vh;
     background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 1vh;
     transition: transform 0.3s ease;
 }
@@ -61,8 +64,21 @@ section#hero-section {
     border: #bebebe 1px solid;
     border-radius: 5px;
 }
+
+.category-item h3 {
+    margin-block-end: 0.5em;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.category-item p {
+/*     margin-block-start: 0.1em;
+    margin-block-end: 0.5em; */
+    font-size: 0.9rem;
+    color: #555;
+}
 section#categories {
-    margin: 3rem
+    margin: 1rem 3rem;
 
 }
 
@@ -71,11 +87,71 @@ section#categories h3 {
     margin-left: 0.6em;
 }
 
+section#categories p {
+    margin-block-start: 0.1em;
+    margin-left: 0.6em;
+}
+
 .category-list div.category-item:hover {
-    transform: scale(2.05) 0.3s ease;
+
 }
 
 .category-list div.category-item img {
     width: 100%;
     height: auto;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #4a6d8c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+section#categories .category-item div {
+    margin: 0.5rem 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+section#categories .category-item .item-price {
+    font-weight: bold;
+    color: #4a6d8c;
+    margin-right: 1rem;
+}
+
+.value-prop-list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3vh;
+    padding: 1rem 0;
+
+}
+
+.value-prop-item {
+    padding: 1rem;
+    background-color: #f4f5f7;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #474747;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 3rem;
+}   
+footer div.footer-links a{
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
 }

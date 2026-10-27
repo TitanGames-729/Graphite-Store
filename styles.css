@@ -25,6 +25,10 @@ header nav a {
     text-decoration: none;
 }
 
+header nav a:active {
+    color: #4a6d8c;
+}
+
 header nav ul {
     list-style: none;
     display: flex;

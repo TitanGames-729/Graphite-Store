@@ -9,6 +9,8 @@ h2 {
     font-size: 2rem;
     margin-block-start: 0.5rem;
     margin-block-end: 0.3rem;
+    /* display: block; */
+    width: 100%;
 }
 
 header nav {
@@ -18,7 +20,7 @@ header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: auto;
 }
 
 header nav a {
@@ -216,4 +218,60 @@ footer div.footer-links a{
     color: #fff;
     text-decoration: none;
     margin: 0 1rem;
+}
+
+@media (max-width: 768px) {
+    .hero-img, .promo-sticker {
+        display: none;
+    }
+
+    header nav {
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+
+    header nav ul#main-nav, header nav ul#user-actions {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    section#hero-section {
+        flex-direction: column;
+        padding: 2rem 1rem;
+    }
+
+    section#categories {
+            margin: 1rem;
+        }
+
+    .category-list {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        width: 100%;
+        gap: 1rem;
+        padding: 0;
+        /* max-width: 280px; */
+        box-sizing: border-box;
+    }
+
+    .category-list div.category-item {
+            width: 100%;
+            max-width: 340px;
+            box-sizing: border-box;
+    }
+
+    .category-section img,
+    .category-list div.category-item img {
+        width: 100%;
+        max-width: 100%;
+        height: 160px;
+    }
+
+    .value-prop-list {
+        flex-direction: column;
+        gap: 1rem;
+    }
 }
